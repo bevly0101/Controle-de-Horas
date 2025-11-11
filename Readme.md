@@ -1,1 +1,1 @@
-![logo fortes engenharia](https://storage.googleapis.com/ecdt-logo-saida/0b22768100f3a03ea57d8ac08d8d99df46a0168fa6fba6211ec5c323dcb095c3/FORTES-ENGENHARIA-LTDA.webp)
+![logo fortes engenharia](https://fortesengenharia.vagas.solides.com.br/_next/image?url=https%3A%2F%2Fc5gwmsmjx1.execute-api.us-east-1.amazonaws.com%2Fprod%2Fdados_processo_seletivo%2Flogo_empresa%2F89455%2FFORTES_LOGOMARCA-cap04%203.png&w=828&q=100)
