@@ -1,0 +1,1 @@
+![logo fortes engenharia](https://storage.googleapis.com/ecdt-logo-saida/0b22768100f3a03ea57d8ac08d8d99df46a0168fa6fba6211ec5c323dcb095c3/FORTES-ENGENHARIA-LTDA.webp)
