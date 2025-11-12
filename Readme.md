@@ -4,4 +4,3 @@
 </p>
 
 <h1 align="center">📊 Controle de Horas Extras | Fortes Engenharia </h1>
----
