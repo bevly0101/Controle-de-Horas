@@ -1,0 +1,19 @@
+:root {
+    --azul-escuro: #4570bc;
+    --azul-claro: #94cce0;
+    --dark: #313D3D;
+    --media-dark: #445267;
+    --amarelo: #F79C1E;
+    --cinza-claro: #E6E6E6;
+    --verde: #40C996;
+    --cinza-escuro: #919191;
+    --vermelho: #F65A5A;
+}
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+}

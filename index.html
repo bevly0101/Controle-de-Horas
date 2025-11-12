@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de Horas</title>
+    <title>Login | Controle de Horas</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="shortcut icon" href="./src/assets/img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Iniciando projeto</h1>
+    <main>
+        <div class="container-logo">
+            <img src="https://fortesengenharia.vagas.solides.com.br/_next/image?url=https%3A%2F%2Fc5gwmsmjx1.execute-api.us-east-1.amazonaws.com%2Fprod%2Fdados_processo_seletivo%2Flogo_empresa%2F89455%2FFORTES_LOGOMARCA-cap04%203.png&w=828&q=100" alt="logo">
+        </div>
+        <div class="container-login">
+            <form action="#" class="form-login" method="post">
+                <div class="capsula-container-inputs">
+                    <div class="container-inputs">
+                        <span class="placeholder">Digite seu CPF</span>
+                        <input placeholder="Ex: 123.456.789-10" type="text" name="cpf" required>
+                    </div>
+                </div>
+                <div class="capsula-container-inputs">
+                    <div class="container-inputs">
+                        <span class="placeholder">Digite sua senha</span>
+                        <input placeholder="" type="password" name="psw" required>
+                        <a class="forgot-psw" href="#">Esqueci minha senha</a>
+                    </div>
+                </div>
+                <input class="btn-login"" type="submit" value="Entrar">
+                
+            </form>
+        </div>
+        <a href="">FAC Perguntas e Respostas</a>
+    </main>
+    
 </body>
 </html>
