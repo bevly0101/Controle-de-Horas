@@ -48,7 +48,7 @@ main{
 .capsula-container-inputs{
     display: flex;
     flex-direction: column;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
     width: 80%;
@@ -57,14 +57,14 @@ main{
 .container-inputs{
     display: flex;
     align-items: flex-start;
-    justify-content: start;
     justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 
 .container-inputs input{
-    width: 100%;
+    width: 90%;
+    align-items: center;
     height: 30px;
     border-radius: 3em;
     outline: none;
@@ -93,4 +93,24 @@ main{
     font-weight: 500;
     border-radius:1.3em;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .container-login{
+        width: 100%;
+        background-color: var(--cinza-claro);
+        box-shadow: none;
+    }
+    .placeholder{
+        color: var(--media-dark);
+    }
+    .container-inputs input{
+        background-color: var(--media-dark);
+        color: var(--cinza-claro);
+    }
+    .forgot-psw{
+        color: var(--media-dark);
+    }
 }

@@ -21,16 +21,19 @@ const users = [
 
 // Função para encontrar um usuário com o mesmo cpf e senha no Banco de Dados
 const validador = (cpf, senha) => {
+    // busca o usuário que tem o mesmo cpf digitado
     let user = users.filter((user) => user.cpf == cpf);
+    //console.log(user)
 
-    console.log(user)
-
+    // caso tenha encontrado, será verificado se a senha é a mesma digitada
+    // coso contrario retornará os respectivos erros
     if (user.length>0){
-        return user[0].cpf === cpf && user[0].senha === senha ? "autenticado" : user[0].cpf === cpf && user[0].senha === senha ? new Error("senha incorreta") : new Error("usuário não encontrado");
+        return user[0].senha === senha ? "autenticado" : new Error("senha incorreta");
     }
     else return new Error("usuário não encontrado");
 };
 
+// busca o cargo do usuário que está logando de acordo com os cargos existentes no banco de dados
 const getCargo = (cpf, senha) => {
     return (users.filter((user) => user.cpf === cpf && user.senha === senha))[0].cargo
 }
@@ -40,10 +43,14 @@ document.querySelector(".form-login").addEventListener("submit", (e) => {
     e.preventDefault();
     let [userCpf, userPassword] = e.target;
 
+    // usa a função de validar dados do usuário
     let dadosValidados = validador(userCpf.value, userPassword.value);
 
     if(dadosValidados === "autenticado"){
+        // usa a função de buscar pelo cargo do usuário
         let cargo = getCargo(userCpf.value, userPassword.value)
+
+        // envia usuário para a respectiva página do cargo
         window.location.href = `./src/pages/dashboard${cargo}.html`
     }
     else window.alert(dadosValidados.message)
