@@ -16,8 +16,9 @@ const users = [
         cpf: "10987654321", 
         senha: "123456"
     }
-
 ];
+
+console.log(users)
 
 // Função para encontrar um usuário com o mesmo cpf e senha no Banco de Dados
 const validador = (cpf, senha) => {
