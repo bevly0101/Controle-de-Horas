@@ -46,6 +46,7 @@ document.querySelector(".form-login").addEventListener("submit", (e) => {
     // usa a função de validar dados do usuário
     let dadosValidados = validador(userCpf.value, userPassword.value);
 
+    // se os dados forem corretos, retornará "autenticado"
     if(dadosValidados === "autenticado"){
         // usa a função de buscar pelo cargo do usuário
         let cargo = getCargo(userCpf.value, userPassword.value)
@@ -53,9 +54,6 @@ document.querySelector(".form-login").addEventListener("submit", (e) => {
         // envia usuário para a respectiva página do cargo
         window.location.href = `./src/pages/dashboard${cargo}.html`
     }
+    // em caso dos dados não estiverem certos, retornará um erro.
     else window.alert(dadosValidados.message)
-
-
-
-
 });

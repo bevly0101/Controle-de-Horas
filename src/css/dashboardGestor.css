@@ -1,0 +1,141 @@
+@import url(./global-style.css);
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90vh;
+    background-color: transparent;
+}
+
+.contentHeaderElements{
+    display: flex;
+    width: 96%;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: var(--dark);
+    height: 12vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 3em 3em 0 0;
+}
+
+header svg{
+    cursor: pointer;
+}
+header svg:hover path{
+    fill: var(--vermelho);
+}
+
+header h1{
+    color: var(--cinza-claro);
+    font-size: 25px;
+}
+
+svg{
+    width: 30px;
+    height: 30px;
+
+}
+
+main{
+    background-color: var(--cinza-claro);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 0 2em 2em;
+}
+
+.contentNavButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2em 0;
+    
+}
+.contentNavButtons button{
+    width: calc(70% / 3);
+    height: 60px;
+    border-radius: 30em;
+    color: var(--cinza-claro);
+    background-color: var(--cinza-escuro);
+    font-size: 20px;
+    transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    -webkit-box-shadow: 3px 5px 7px -3px rgba(0,0,0,0.52); 
+    box-shadow: 3px 5px 7px -3px rgba(0,0,0,0.52);
+}
+.contentNavButtons button:hover{
+    background-color: var(--selected-button);
+    transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    cursor: pointer;
+}
+
+.contentNavButtons .selected, .contentNavButtons .selected:hover{
+    background-color: var(--azul-escuro-cinza);
+    cursor: default;
+}
+
+
+.viewReportsContainer{
+    height: 55vh;
+    width: 90%;
+    display: flex;
+}
+
+.selectWorkContainer{
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+.selectorTitleContainer{
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+.selectorTitleContainer span{
+    font-size: 20px;
+}
+
+.selectorContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+}
+
+select{
+    background-color: var(--dark);
+    color: var(--cinza-claro);
+    width: 60%;
+    height: 50px;
+    border-radius: 2em;
+    text-indent: 20px;
+    font-size: 16px
+}
+
+select::-webkit-keygen-select{
+    background-color: aliceblue;
+}

@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Técnico</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/dashboardGestor.css">
 </head>
+
 <body>
-    <h1>Bem vindo Gestor</h1>
+    <div class="container">
+        <header>
+            <div class="contentHeaderElements">
+                <h1>Olá, Gestor!</h1>
+                <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.45">
+                        <path
+                            d="M12.0833 50.75C10.7542 50.75 9.61672 50.2771 8.671 49.3314C7.72528 48.3857 7.25161 47.2474 7.25 45.9167V12.0833C7.25 10.7542 7.72367 9.61672 8.671 8.671C9.61833 7.72528 10.7558 7.25161 12.0833 7.25H29V12.0833H12.0833V45.9167H29V50.75H12.0833ZM38.6667 41.0833L35.3438 37.5792L41.5062 31.4167H21.75V26.5833H41.5062L35.3438 20.4208L38.6667 16.9167L50.75 29L38.6667 41.0833Z"
+                            fill="#40C996" />
+                    </g>
+                </svg>
+            </div>
+        </header>
+        <main>
+            <div class="contentNavButtons">
+                <button class="selected">Visualizar Relatórios</button>
+                <button>Gerar Relatórios</button>
+                <button>Solicitações</button>
+            </div>
+            <div class="viewReportsContainer">
+                <div class="selectWorkContainer">
+                    <div class="selectorTitleContainer">
+                        <span>Selecione a obra</span>
+                    </div>
+                    <div class="selectorContainer">
+                        <select name="selectWork" id="selectWork">
+                            <option value="1">obra do joaqim</option>
+                            <option value="2">obra do josé</option>
+                            <option value="3">obra do maria</option>
+                        </select>
+                        <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.4167 35.5V58.8117C41.535 59.6992 41.2392 60.6458 40.5588 61.2671C40.2851 61.5413 39.96 61.7589 39.6021 61.9074C39.2442 62.0558 38.8606 62.1322 38.4731 62.1322C38.0857 62.1322 37.7021 62.0558 37.3442 61.9074C36.9863 61.7589 36.6612 61.5413 36.3875 61.2671L30.4413 55.3208C30.1188 55.0053 29.8736 54.6195 29.7248 54.1936C29.576 53.7677 29.5276 53.3131 29.5834 52.8654V35.5H29.4946L12.4546 13.6675C11.9742 13.0508 11.7574 12.269 11.8517 11.4929C11.9459 10.7169 12.3435 10.0097 12.9575 9.52583C13.5196 9.11167 14.1409 8.875 14.7917 8.875H56.2084C56.8592 8.875 57.4804 9.11167 58.0425 9.52583C58.6566 10.0097 59.0541 10.7169 59.1484 11.4929C59.2426 12.269 59.0258 13.0508 58.5454 13.6675L41.5054 35.5H41.4167Z"
+                                fill="black" />
+                        </svg>
+                        <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_18_276" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="10"
+                                width="69" height="69">
+                                <path
+                                    d="M11.125 44.5C11.125 26.0696 26.0696 11.125 44.5 11.125C62.9304 11.125 77.875 26.0696 77.875 44.5C77.875 62.9304 62.9304 77.875 44.5 77.875C26.0696 77.875 11.125 62.9304 11.125 44.5Z"
+                                    fill="white" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M29.6667 44.5002L40.7917 55.6252L59.3334 37.0835" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </mask>
+                            <g mask="url(#mask0_18_276)">
+                                <path d="M89 0H0V89H89V0Z" fill="#445267" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="tableReportContainer">
+                    <table class="tableReport">
+                    </table>
+                </div>
+            </div>
+            <div class="helpContainer">
+                <button class="helpButton">ajuda</button>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>

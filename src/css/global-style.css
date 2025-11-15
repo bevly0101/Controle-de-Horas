@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
 :root {
     --azul-escuro: #4570bc;
+    --azul-escuro-cinza:#445267;
+    --selected-button:#686c72;
     --azul-claro: #94cce0;
     --dark: #313D3D;
     --media-dark: #445267;
@@ -16,4 +21,8 @@
     vertical-align:baseline;
     list-style:none;
     border:0;
-} 
+    font-family: 'Roboto Slab';
+}
+body{
+    background-color: var(--cinza-claro);
+}
