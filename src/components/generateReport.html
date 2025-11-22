@@ -1,0 +1,87 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="viewReportsContainer">
+        <div>
+            <h2>Selecione o Parâmetro</h2>
+            <div class="continerCheckbox">
+                <input type="checkbox" name="porPeriodo">
+                <input type="checkbox" name="porObra">
+            </div>
+        </div>
+        <h2>__/__/__ até __/__/__</h2>
+        <div>
+            <h3>Data de Início</h3>
+            <input type="date" name="startIn">
+            <h3>Data de Fim</h3>
+            <input type="date" name="endIn">
+        </div>
+        <div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Obra</th>
+                        <th>Qtd. Horas Realizadas</th>
+                        <th>Custos de Hora Extra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>03/08/2025</td>
+                        <td><a href="#">Praça Augusto Cury</a></td>
+                        <td>40</td>
+                        <td>R$ 20.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>12/08/2025</td>
+                        <td><a href="#">Viaduto Ayrton Senna</a></td>
+                        <td>20</td>
+                        <td>R$ 10.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>14/08/2025</td>
+                        <td><a href="#">Edifício Costa do Caribe</a></td>
+                        <td>80</td>
+                        <td>R$ 40.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>15/08/2025</td>
+                        <td><a href="#">Estrada da Ferrovia</a></td>
+                        <td>30</td>
+                        <td>R$ 1.500,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="total-label">Total</td>
+                        <td class="total-value">**R$ 85.000,00**</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        <div class="containerExportButton">
+            <button class="buttonExport">
+                <span>Exportar</span>
+                <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.0101 20H24V21.8813H27.0101V20Z" fill="#E6E6E6" />
+                    <path
+                        d="M18.6837 0H0V33.1111H27.0909V24.4571H24.0808V28.596H21.0707V18.8131C21.0707 18.2144 21.3086 17.6402 21.7319 17.2168C22.1553 16.7934 22.7295 16.5556 23.3283 16.5556H27.0909V17.8935V8.40721L18.6837 0ZM17.3081 9.78283V3.0101L24.0808 9.78283H17.3081ZM9.40657 24.4571H7.52525V28.596H4.51515V16.5556H9.40657C10.0053 16.5556 10.5795 16.7934 11.0029 17.2168C11.4263 17.6402 11.6641 18.2144 11.6641 18.8131V22.1995C11.6641 22.7982 11.4263 23.3725 11.0029 23.7958C10.5795 24.2192 10.0053 24.4571 9.40657 24.4571ZM19.9419 18.8131V26.3384C19.9419 26.9371 19.7041 27.5114 19.2807 27.9347C18.8573 28.3581 18.2831 28.596 17.6843 28.596H12.7929V16.5556H17.6843C18.2831 16.5556 18.8573 16.7934 19.2807 17.2168C19.7041 17.6402 19.9419 18.2144 19.9419 18.8131Z"
+                        fill="#E6E6E6" />
+                    <path d="M8 20.8813V19H9.12879V20.8813H8ZM16.2778 19H17.4066V25.0202H16.2778V19Z" fill="#E6E6E6" />
+                </svg>
+
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>

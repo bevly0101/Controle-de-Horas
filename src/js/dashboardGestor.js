@@ -1,9 +1,20 @@
 
+const whenRenderComponent = ()=>{
+    const selector = document.querySelector(".selectorContainer select");
+    const options = []
+    Object.keys(obras).forEach((e,i) => {
+        options.push(`<option value="${i}">${e}</option>`)
+    })
+    selector.innerHTML = options.join('');
+} 
+
+
 // função com o propósito de renderizar determinado componente
 const renderComponent = (pagelink, local)=> {
     fetch(pagelink).then(e => e.text()).then(e => {
             const newElement = document.createTextNode(e)
             local.innerHTML = newElement.nodeValue;
+            whenRenderComponent()
         });
 }
 
@@ -12,7 +23,7 @@ const renderComponent = (pagelink, local)=> {
 // lista do caminho referente a cada componente da pagina do gestor
 const pages = [
     '../components/viewReports.html',
-    './teste.html',
+    '../components/generateReport.html',
     './teste.html'
 ]
 
@@ -45,4 +56,6 @@ buttonsNavList.forEach((e, i) => {
         }
     })
 });
+
+document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "/index.html");
 

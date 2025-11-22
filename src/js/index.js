@@ -1,24 +1,6 @@
 
-// lista de usuários para simular um banco de dados
-const users = [
-    {
-        cargo: "Encarregado",
-        cpf: "54321109876",
-        senha: "123456"
-    },
-    {
-        cargo: "Técnico",
-        cpf: "12345678910",
-        senha: "123456"
-    },
-    {
-        cargo: "Gestor",
-        cpf: "10987654321", 
-        senha: "123456"
-    }
-];
 
-console.log(users)
+console.table(users)
 
 // Função para encontrar um usuário com o mesmo cpf e senha no Banco de Dados
 const validador = (cpf, senha) => {

@@ -180,3 +180,25 @@ table {
   tfoot th {
     font-weight: bold;
   }
+
+
+  /** TELA GERAR RELATÓRIO **/
+.containerExportButton{
+    display: flex;
+    align-items: center;
+    justify-content:    right;
+    width: 100%;
+}
+.buttonExport{
+    background-color: var(--dark);
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    border-radius: 3em;
+    width: 13em;
+    color: var(--cinza-claro);
+    font-size: 17px;
+
+}
