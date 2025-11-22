@@ -1,13 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url(./global-style.css);
 
 
 body{
-    font-family: "Roboto Slab", serif;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
 }
 
 .container{
@@ -15,8 +18,8 @@ body{
     flex-direction: column;
     align-items: center;
     width: 90%;
+    height: 90vh;
     background-color: transparent;
-    max-width: 90vw;
 }
 
 .contentHeaderElements{
@@ -28,12 +31,12 @@ body{
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    background-color: #313D3D;
+    background-color: var(--dark);
     height: 12vh;
     width: 100%;
     align-items: center;
+    justify-content: center;
+    display: flex;
     border-radius: 3em 3em 0 0;
 }
 

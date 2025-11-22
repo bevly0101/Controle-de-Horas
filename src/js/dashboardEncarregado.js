@@ -22,3 +22,5 @@ slide.addEventListener("wheel", (event) => {
     event.preventDefault();
     slide.scrollLeft += event.deltaY;
 });
+
+document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "/index.html");
