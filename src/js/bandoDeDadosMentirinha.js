@@ -1,5 +1,4 @@
 
-// lista de usuários para simular um banco de dados
 const users = [
     {
         cargo: "Encarregado",
