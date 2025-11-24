@@ -1,12 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Técnico</title>
-    <link rel="stylesheet" href="../css/index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard Técnico</title>
+  <link rel="stylesheet" href="../css/dashboardGestor.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Bem vindo Técnico</h1>
+    <div class="container">
+        <header>
+            <div class="contentHeaderElements">
+                <h1>Olá, Técnico!</h1>
+                <svg class="exitButton" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.45">
+                        <path
+                            d="M12.0833 50.75C10.7542 50.75 9.61672 50.2771 8.671 49.3314C7.72528 48.3857 7.25161 47.2474 7.25 45.9167V12.0833C7.25 10.7542 7.72367 9.61672 8.671 8.671C9.61833 7.72528 10.7558 7.25161 12.0833 7.25H29V12.0833H12.0833V45.9167H29V50.75H12.0833ZM38.6667 41.0833L35.3438 37.5792L41.5062 31.4167H21.75V26.5833H41.5062L35.3438 20.4208L38.6667 16.9167L50.75 29L38.6667 41.0833Z"
+                            fill="#40C996" />
+                    </g>
+                </svg>
+            </div>  
+        </header>
+        <main>
+            <div class="contentNavButtons">
+                <button class="selected">Horas Realizadas</button>
+                <button>Horas Atribuídas</button>
+                <button>Calculadora de Horas</button>
+            </div>
+            <div class="containerPageChoose">
+                
+            </div>
+            <div class="helpContainer">
+                <button class="helpButton">ajuda</button>
+            </div>
+        </main>
+    </div>
+    <script src="../js/dashboardTecnico.js"></script>
 </body>
 </html>

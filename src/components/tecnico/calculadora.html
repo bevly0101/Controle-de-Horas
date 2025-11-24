@@ -1,0 +1,35 @@
+<div class="viewReportsContainer">
+    <div class="content" style="padding: 1.5rem;">
+        <p class="cell-muted" style="opacity: 0.7;">Selecione o período:</p>
+
+        <div class="calc-area" style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <div class="calc-card" style="background-color: rgba(0,0,0,0.1); padding: 1rem; border-radius: 8px; flex-grow: 1;">
+                <label class="cell-muted" style="opacity: 0.7;">De</label>
+                <input type="date" aria-label="Data início" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: white; margin-top: 0.5rem;">
+                <div style="height:12px"></div>
+                <label class="cell-muted" style="opacity: 0.7;">Até</label>
+                <input type="date" aria-label="Data fim" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: white; margin-top: 0.5rem;">
+            </div>
+
+            <div style="display:flex; align-items:center;">
+                <button class="buttonExport" style="padding: 1rem 1.5rem; height: auto;">
+                    <span>Calcular</span>
+                </button>
+            </div>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="results" style="display: flex; justify-content: space-around; background-color: rgba(0,0,0,0.1); padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
+            <div class="result-box" style="text-align: center;">
+                <div class="cell-muted" style="opacity: 0.7;">Total de horas extras</div>
+                <div class="result-value" style="font-size: 1.75rem; font-weight: bold; margin-top: 0.5rem;">22 horas</div>
+            </div>
+            <div style="width:1px; background:rgba(255,255,255,0.12)"></div>
+            <div class="result-box" style="text-align: center;">
+                <div class="cell-muted" style="opacity: 0.7;">Total a receber (R$)</div>
+                <div class="result-value" style="font-size: 1.75rem; font-weight: bold; margin-top: 0.5rem;">R$396,00</div>
+            </div>
+        </div>
+    </div>
+</div>

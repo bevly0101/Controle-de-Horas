@@ -91,6 +91,10 @@ main{
     cursor: pointer;
 }
 
+.errorMessage{
+    display: none;
+    color: var(--vermelho);
+}
 
 
 @media screen and (max-width: 768px){

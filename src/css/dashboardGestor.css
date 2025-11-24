@@ -202,3 +202,53 @@ table {
     font-size: 17px;
 
 }
+
+.continerCheckbox {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.form-group input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 50px;
+    height: 28px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.form-group input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s;
+}
+
+.form-group input[type="checkbox"]:checked {
+    background-color: var(--azul-escuro-cinza);
+}
+
+.form-group input[type="checkbox"]:checked::before {
+    left: 24px;
+}
