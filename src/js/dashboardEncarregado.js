@@ -1,14 +1,11 @@
 
 
-
-
-
 const slide = document.querySelector(".slide");
 const btnPrev = document.querySelector(".prev");
 const btnNext = document.querySelector(".next");
 
 btnNext.addEventListener("click", () => {
-    slide.scrollLeft += 350; 
+    slide.scrollLeft += 350;
 });
 
 btnPrev.addEventListener("click", () => {
@@ -21,3 +18,7 @@ slide.addEventListener("wheel", (event) => {
 });
 
 document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "/index.html");
+
+document.getElementById("btnSolicitarHoras").addEventListener("click", () => {
+    window.location.href = "solocitaçãoEncarregado.html";
+});

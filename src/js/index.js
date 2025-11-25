@@ -16,6 +16,7 @@ const getCargo = (cpf, senha) => {
 
 document.querySelector(".form-login").addEventListener("submit", (element) => {
     element.preventDefault();
+    console.log(element.target)
     let [userCpf, userPassword] = element.target; //desestruturação de array
 
     let dadosValidados = validador(userCpf.value, userPassword.value);
@@ -23,7 +24,7 @@ document.querySelector(".form-login").addEventListener("submit", (element) => {
     if (dadosValidados === "autenticado") {
         let cargo = getCargo(userCpf.value, userPassword.value);
 
-        window.location.href = `./src/pages/dashboard${cargo}.html`;
+        //window.location.href = `./src/pages/dashboard${cargo}.html`;
     }
 
     else {
