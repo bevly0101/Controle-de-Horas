@@ -36,7 +36,7 @@ buttonsNavList.forEach((e, i) => {
 });
 
 
-document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "/Controle-de-Horas");
+document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "https://bevly0101.github.io/Controle-de-Horas/");
 
 
 
