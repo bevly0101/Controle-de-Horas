@@ -17,7 +17,7 @@ slide.addEventListener("wheel", (event) => {
     slide.scrollLeft += event.deltaY;
 });
 
-document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "https://bevly0101.github.io/Controle-de-Horas/");
+document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "https://bevly0101.github.io/Controle-de-Horas");
 
 document.getElementById("btnSolicitarHoras").addEventListener("click", () => {
     window.location.href = "solocitaçãoEncarregado.html";
