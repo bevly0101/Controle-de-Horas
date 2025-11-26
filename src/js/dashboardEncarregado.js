@@ -17,7 +17,7 @@ slide.addEventListener("wheel", (event) => {
     slide.scrollLeft += event.deltaY;
 });
 
-document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "/index.html");
+document.querySelector(".exitButton").addEventListener("click", () => window.location.href = "index.html");
 
 document.getElementById("btnSolicitarHoras").addEventListener("click", () => {
     window.location.href = "solocitaçãoEncarregado.html";
