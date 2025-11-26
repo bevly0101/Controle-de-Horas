@@ -22,7 +22,7 @@ const changeTable = (indexObraSelected) => {
     table.querySelector('tbody').innerHTML = newTable
 };
 
-
+ 
 const whenRenderComponent = () => {
     const selector = document.querySelector(".selectorContainer select");
     const options = []

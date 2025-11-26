@@ -1,10 +1,10 @@
-// função com o propósito de renderizar determinado componente
 const renderComponent = (pagelink, local) => {
     fetch(pagelink).then(e => e.text()).then(e => {
         const newElement = document.createTextNode(e)
         local.innerHTML = newElement.nodeValue;
     });
 }
+
 
 const pages = [
     '../components/tecnico/realizadas.html',
@@ -20,7 +20,6 @@ renderComponent(pages[0], areaChangeNav);
 
 buttonsNavList.forEach((e, i) => {
     e.addEventListener('click', () => {
-
         if (!e.classList.contains('selected')) {
 
             buttonsNavList.forEach(e => e.classList.remove('selected'));
