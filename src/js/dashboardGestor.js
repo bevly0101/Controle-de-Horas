@@ -22,7 +22,6 @@ const changeTable = (indexObraSelected) => {
     table.querySelector('tbody').innerHTML = newTable
 };
 
- 
 const whenRenderComponent = () => {
     const selector = document.querySelector(".selectorContainer select");
     const options = []
@@ -36,12 +35,7 @@ const whenRenderComponent = () => {
     document.querySelector(".selectorContainer select").addEventListener("change", (e) => {
         changeTable(e.target.value)
     });
-
-
-
-
 }
-
 
 const renderComponent = (pagelink, local) => {
     fetch(pagelink).then(e => e.text()).then(e => {
